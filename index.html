@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzin</title>
+    <style>
+        @media (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .text-box {
+                width: 90%;
+                height: auto;
+            }
+
+            .a9 {
+                width: 80%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .a9 {
+                width: 100%;
+                height: auto;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .a5, .a6 {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+
+        nav h3 {
+            font-size: 50px;
+            color: #8913b2;
+            margin: 5px;
+            transition: font-size 0.2s ease-in-out;
+        }
+
+            nav h3:hover {
+                font-size: 60px;
+            }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+        }
+
+            ul li {
+                position: relative;
+            }
+
+                ul li a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 16px;
+                }
+
+                ul li ul {
+                    display: none;
+                    position: absolute;
+                    left: 0px;
+                    text: 100%;
+                    padding: 0px;
+                    list-style-type: none;
+                    background-color: white;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+                }
+
+                ul li:hover > ul {
+                    display: block;
+                }
+
+        .a1 {
+            font-size: 0;
+            padding-inline: 100px;
+            transition: font-size 0.5s ease;
+        }
+
+            .a1:hover {
+                padding: 0 65px 15px;
+                font-size: 60px;
+            }
+
+        ul li ul li a {
+            padding-right: 65px;
+            padding-left: 65px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            color: black;
+            transition: color 0.3s ease-in-out;
+        }
+
+            ul li ul li a:hover {
+                color: #8913b2;
+            }
+
+        ul li ul li {
+            background-color: #8913b2;
+            padding-bottom: 15px;
+            transition: background-color 0.3s ease-in-out;
+            transition: font-size 0.3s ease-in-out;
+        }
+
+            ul li ul li:hover {
+                background-color: black;
+                font-size: 40px;
+                border-radius: 25px;
+            }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px 100px;
+            margin-bottom: 0px;
+        }
+
+        .text-box {
+            width: 50%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .a4 {
+            border-left: 5px solid #8913b2;
+            padding-left: 20px;
+        }
+
+        .a2 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .a3 {
+            font-size: 20px;
+            color: #8913b2;
+            margin: 12px 0 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .a5, .a6 {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .a5 {
+            background-color: #8913b2;
+            color: white;
+        }
+
+            .a5:hover {
+                background-color: white;
+                color: #8913b2;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+                transform: translateY(-3px);
+            }
+
+        .a6 {
+            color: #8913b2;
+        }
+
+            .a6:hover {
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+                transform: translateY(-3px);
+            }
+
+        .schedule {
+            margin-top: 50px;
+        }
+
+        .a7 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .a8 {
+            color: #8913b2;
+        }
+
+        .a9 {
+            width: 80%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20%;
+        }
+
+        .a10 {
+            font-size: 10px;
+            margin: 0px;
+            margin-left: 1200px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <h3>Foodzin</h3>
+        <ul>
+            <li class="a1">
+                <a href="">Menu</a>
+                <ul>
+                    <li><a href="">Hamburger</a></li>
+                    <li><a href="">Pizza</a></li>
+                    <li><a href="">Pasta</a></li>
+                    <li><a href="">Sandwich</a></li>
+                </ul>
+            </li>
+            <li class="a1"><a href="">Our</a></li>
+            <li class="a1"><a href="">Categories</a></li>
+            <li class="a1"><a href="">Restaurants</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="text-box">
+            <div class="a4">
+                <p class="a2">Healthy Diet<br>Everyday</p>
+                <p class="a3">Order today and receive your<br>package tomorrow</p>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="View Menu" class="a5">
+                <input type="submit" value="Book a Table" class="a6">
+            </div>
+            <div class="schedule">
+                <h3 class="a7">Breakfast</h3>
+                <h5 class="a8">9:00 am - 11:00 am</h5>
+            </div>
+        </div>
+        <img class="a9" src="pasta2.webp" alt="Pasta">
+    </div>
+    <p class="a10">Ali Alizadeh</p>
+</body>
+</html>
