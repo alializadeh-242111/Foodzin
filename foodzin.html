@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa">
 <head>
-    <meta charset="utf-8" />
-    <title>foodzin</title>
-    <link rel="website icon" href="Screenshot 2025-03-11 125409.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzin</title>
     <style>
+        @media (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .text-box {
+                width: 90%;
+                height: auto;
+            }
+
+            .a9 {
+                width: 80%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .a9 {
+                width: 100%;
+                height: auto;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .a5, .a6 {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
         .menu {
             display: flex;
             align-items: center;
@@ -95,6 +130,7 @@
             align-items: center;
             justify-content: space-between;
             margin: 50px 100px;
+            margin-bottom: 0px;
         }
 
         .text-box {
@@ -175,6 +211,13 @@
             object-fit: cover;
             border-radius: 20%;
         }
+
+        .a10 {
+            font-size: 10px;
+            margin: 0px;
+            margin-left: 1200px;
+            margin-top: 25px;
+        }
     </style>
 </head>
 <body>
@@ -213,5 +256,6 @@
         </div>
         <img class="a9" src="pasta2.webp" alt="Pasta">
     </div>
+    <p class="a10">Ali Alizadeh</p>
 </body>
 </html>
